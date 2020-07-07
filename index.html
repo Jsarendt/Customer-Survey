@@ -5,8 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- link to main stylesheet -->
+    <!-- Main stylesheet -->
     <link rel="stylesheet preload" type="text/css" href="main.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet preconnect" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+	  <link rel="stylesheet preconnect" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
+    <!-- link to main style sheet-->
+    <link rel="stylesheet preload" type="text/css" href="main.css">
+    
+    <script type="application/javascript" async="async">
+      function openForm() {
+	      var a = document.forms["survey"]["name"].value;
+        var b = document.forms["survey"]["email"].value;
+	      if (a !== '' && b !== '') {
+  	      alert("Thank you for participating! Your feedback has been recorded!");
+	      }
+      }
+    </script>
+    
   </head>
   <body>
     <div id="main">
