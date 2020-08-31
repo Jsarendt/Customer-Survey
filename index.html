@@ -10,7 +10,9 @@
     <!-- Google Fonts -->
     <link rel="stylesheet preconnect" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
     <link rel="stylesheet preconnect" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
-    
+    <!---Font Awesome--->
+    <script src="https://kit.fontawesome.com/a0a5b24b86.js" crossorigin="anonymous"></script>
+	  
     <script type="application/javascript" async="async">
       function openForm() {
 	      var a = document.forms["survey"]["name"].value;
@@ -20,115 +22,122 @@
 	      }
       }
     </script>
-    
   </head>
   <body>
-    <div id="main">
-      <div id="header">
-        <h1 id="title">Executive Air Customer Survey </h1>
-        <p id="description"><em>Help us improve our customer experience!</em></p>
-      </div>
-      <form id="survey-form" name="survey">
-       <div id="information">
-       <label id="name-label" for="name">Name</label>
-        <input 
-          id="name" 
-          type="text"
-          placeholder="Enter your name"
-          required>
-        </input>
-       <label id="email-label" for="email">Email</label>
-        <input 
-          id="email"
-          type="email"
-          placeholder="Enter your email"
-          required>
-        </input>
-       <label id="number-label" for="number">Age (Optional)</label>
-        <input
-          id="number"
-          type="number"
-          min="18"
-          max="99"
-          placeholder="Age">
-         </input>
-      <label id="company-label" for="company">Company (Optional)</label>
-        <input 
-          id="company" 
-          type="text"
-          placeholder="Enter your company"
-          required>
-        </input>
-        <p id="question" style="margin-top: 0px; margin-bottom: 0px;">Which option best describes what type of customer you are?</p>
-        <select id="dropdown" name="role" class="form-control" required>
-          <option disabled selected value>Select current role</option>
-          <option value="student">Pilot</option>
-          <option value="job">Passenger</option>
-          <option value="learner">Aircraft Owner</option>
-          <option value="other">Other</option>
-          <option value="preferNo">Prefer not to say</option>
-        </select>
-        </div>
-      <div id="visit-reason">
-      <p id="question"> What is your primary reason for visiting? (Pilots)</p>
-        <label for="Maintenance">
-          <input type="checkbox" name="visit-reason" value="Maintenance">Maintenance</input>
-        </label>
-        <label for="Fuel">
-          <input type="checkbox" name="visit-reason" value="Fuel">Fuel</input>
-        </label>
-        <label>
-          <input type="checkbox" name="visit-reason" value="Customer-request">Customer Request</input>
-        </label>
-        <label>
-          <input type="checkbox" name="visit-reason" value="Packer-Games">Packer Games</input>
-        </label>
-        <label>
-          <input type="checkbox" name="visit-reason" value="Other">Other</input>
-      </div>
-      <div id="recommendation">
-        <p id="question">Would you refer Executive Air to others?</p>
-        <label id="answer">
-          <input type="radio" name="answer" value="of-course"> Of course!</input>
-          <input type="radio" name="answer" value="not-sure"> Not Sure</input>
-          <input type="radio" name="answer" value="probably-not"> Probably Not</input>
-        </label>
-      </div>
-        <div id="best-worst">
-          <p id="question">What area do we excel at the most?</p>
-          <label>
-            <input type="checkbox" name="best" value="Customer-Service">Customer Service</input>
-          </label>
-          <label>
-            <input type="checkbox" name="best" value="Line-services">Line Services</input>
-          </label>
-          <label>
-            <input type="checkbox" name="best" value="Appearance/Cleanliness">Appearance/Cleanliness</input>	
-          </label>
-          <label>
-            <input type="checkbox" name="best" value="pricing">Pricing</input>
-          </label>
-        <p id="question">What area could we improve upon the most?</p>
-          <label>
-            <input type="checkbox" name="best" value="Customer-Service">Customer Service</input>
-          </label>
-          <label>
-            <input type="checkbox" name="best" value="Line-services">Line Services</input>
-          </label>
-          <label>
-            <input type="checkbox" name="best" value="Appearance/Cleanliness">Appearance/Cleanliness</input>	
-          </label>
-          <label>
-            <input type="checkbox" name="best" value="pricing">Pricing</input>
-          </label>
-        </div>
-       <p id="question">Any comments or suggestions?</p>
-        <textarea  id="comment-box" placeholder="Enter your comments here..."></textarea>
-        <button 
-          type="submit" 
-          id="submit" 
-          onclick="openForm()">Submit</button>
-      </form>
-    </div>
+   <div id="main">
+  <div id="header">
+    <h1 id="title">Executive Air Customer Survey </h1>
+	<p id="description"><em>Help us improve our customer experience!</em></p>
+  </div>
+    <form id="survey-form" name="survey">
+   <div id="information">
+   <label class="label" for="name">Name</label>
+	<div class="label-container">
+		<input 
+		    id="name" 
+		    type="text"
+		    placeholder="Enter your name"
+		    required>
+		</input>
+		<i class="fas fa-asterisk fa-sm"></i>
+	</div>
+   <label class="label" for="email">Email</label>
+	<div class="label-container">
+		<input 
+		    id="email"
+		    type="email"
+		    placeholder="Enter your email"
+		    required>
+		</input>
+		<i class="fas fa-asterisk fa-sm"></i>
+	</div>
+	<label class="label" for="company">Company (Optional)</label>
+    <input 
+      id="company" 
+      type="text"
+      placeholder="Enter your company">
+    </input>
+    <p id="question" style="margin-top: 0px; margin-bottom: 0px;">Which option best describes what type of customer you are?</p>
+    <select id="dropdown" name="role" class="form-control">
+      <option disabled selected value>Select current role</option>
+      <option value="student">Pilot</option>
+      <option value="job">Passenger</option>
+      <option value="learner">Aircraft Owner</option>
+      <option value="other">Other</option>
+			<option value="preferNo">Prefer not to say</option>
+    </select>
+		</div>
+	<div id="visit-reason">
+  <p id="question"> What is your primary reason for visiting? (Pilots)</p>
+		<label for="Maintenance">
+      <input type="checkbox" name="visit-reason" value="Maintenance">Maintenance</input>
+    </label>
+    <label for="Fuel">
+      <input type="checkbox" name="visit-reason" value="Fuel">Fuel</input>
+    </label>
+    <label>
+      <input type="checkbox" name="visit-reason" value="Customer-request">Customer Request</input>
+    </label>
+    <label>
+      <input type="checkbox" name="visit-reason" value="Packer-Games">Packer Games</input>
+    </label>
+		<label>
+			<input type="checkbox" name="visit-reason" value="Other">Other</input>
+	</div>
+	<div id="recommendation">
+	  <p id="question">How likely are you to refer Executive Air to others?</p>
+		<div id="answer">
+			<button class="btn">1</button>
+			<button class="btn">2</button>
+			<button class="btn">3</button>
+			<button class="btn">4</button>
+			<button class="btn">5</button>
+			<button class="btn">6</button>
+			<button class="btn">7</button>
+			<button class="btn">8</button>
+			<button class="btn">9</button>
+			<button class="btn">10</button>
+    	</div>
+		<div id="recommendationText">
+			<p>Less Likely</p>
+			<p>More Likely</p>
+		</div>
+	</div>
+		<div id="best-worst">
+		<p id="question">What area do we excel at the most?</p>
+		<label>
+			<input type="checkbox" name="best" value="Customer-Service">Customer Service</input>
+		</label>
+		<label>
+			<input type="checkbox" name="best" value="Line-services">Line Services</input>
+		</label>
+		<label>
+			<input type="checkbox" name="best" value="Appearance/Cleanliness">Appearance/Cleanliness</input>	
+		</label>
+		<label>
+			<input type="checkbox" name="best" value="pricing">Pricing</input>
+		</label>
+	<p id="question">What area could we improve upon the most?</p>
+		<label>
+			<input type="checkbox" name="best" value="Customer-Service">Customer Service</input>
+		</label>
+		<label>
+			<input type="checkbox" name="best" value="Line-services">Line Services</input>
+		</label>
+		<label>
+			<input type="checkbox" name="best" value="Appearance/Cleanliness">Appearance/Cleanliness</input>	
+		</label>
+		<label>
+			<input type="checkbox" name="best" value="pricing">Pricing</input>
+		</label>
+	</div>
+   <p id="question">Any comments or suggestions?</p>
+    <textarea  id="comment-box" placeholder="Enter your comments here..."></textarea>
+    <button 
+	type="submit" 
+	id="submit" 
+	onclick="openForm()">Submit</button>
+  </form>
+</div>
   </body>
 </html>
