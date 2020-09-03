@@ -1,20 +1,20 @@
 #header {
-    margin: auto;
-    text-align: center;
-    padding: 3px 0px 3px 0px;
-    font-family: 'poppins', sans-serif;
-    color: lightgrey;
+	margin: auto;
+	text-align: center;
+	padding: 3px 0px 3px 0px;
+	font-family: 'poppins', sans-serif;
+	color: lightgrey;
 }
 #survey-form {
-    display: block;
-    max-width: 600px;
-    margin: auto;
-    background-color: rgba(0,170,0, 0.75);
-    border-radius: 10px;
-    padding: 20px 40px 20px 40px;
-    font-family: 'poppins', sans-serif;
-    font-size: 19px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	display: block;
+	max-width: 600px;
+	margin: auto;
+	background-color: rgba(0,170,0, 0.75);
+	border-radius: 10px;
+	padding: 20px 40px 20px 40px;
+	font-family: 'poppins', sans-serif;
+	font-size: 19px;
+	box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
 }
 #information {
 	display: flex;
@@ -58,12 +58,12 @@ body::before {
   z-index: -1;
   background-color: darkgreen;
   background-image: 
-    linear-gradient(
+		linear-gradient(
       115deg,
       rgba(0, 0, 0, 0.85),
       rgba(0, 120, 0, 0.7)
     ),
-    url(http://executiveair.com/wp-content/uploads/2014/01/MainPhoto7.jpg);
+		url(http://executiveair.com/wp-content/uploads/2014/01/MainPhoto7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -100,7 +100,7 @@ body::before {
 #submit:active {
 	transform: scale(0.95);
 }
-#question {
+.question {
 	display: block;
 	margin-left: 4px;
 }
@@ -115,11 +115,7 @@ input {
 	height: 15px;
 }
 input:active {
-	transform: scale(1.2);
-}
-input:checked {
-	background-color: green;
-	color: green;
+	transform: scale(0.9);
 }
 .btn {
 	width: 45px;
@@ -130,11 +126,15 @@ input:checked {
 	font-weight: bold;
 	font-size: 18px;
 }
-.btn:hover {
-	background-color: green;
-	color: white;
+.btn:active {
+	transform: scale(0.9);
 }
-.btn:checked {
+:focus {
+	border: 2px solid darkgreen;
+	outline: 0;
+}
+.selected {
+	transform: scale(1.1);
 	background-color: green;
 	color: white;
 }
