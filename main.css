@@ -121,8 +121,8 @@ input:active {
 	width: 45px;
 	height: 45px;
 	border-radius: 5px;
-	border: 2px solid darkgreen;
-	color: green;
+	border: 2px solid black;
+	color: black;
 	font-weight: bold;
 	font-size: 18px;
 }
@@ -130,7 +130,7 @@ input:active {
 	transform: scale(0.9);
 }
 :focus {
-	border: 2px solid darkgreen;
+	border: 2px solid black;
 	outline: 0;
 }
 .selected {
